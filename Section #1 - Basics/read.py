@@ -2,13 +2,13 @@
 
 import cv2 as cv
 
-img = cv.imread('../Resources/Photos/cats.jpg')
+img = cv.imread('../Resources/Photos/cat_large.jpg')
 cv.imshow('Cats', img)
 
-cv.waitKey(0)
+cv.waitKey(0) #* this is used 
 
 # Reading Videos
-capture = cv.VideoCapture('../Resources/Videos/dog.mp4')
+capture = cv.VideoCapture('../Resources/Videos/dog.mp4') #! (0/1/2) 0 for webcam, 1 for attach cam1
 
 while True:
     isTrue, frame = capture.read()
@@ -26,3 +26,5 @@ while True:
 
 capture.release()
 cv.destroyAllWindows()
+
+## I learn a lot of things
